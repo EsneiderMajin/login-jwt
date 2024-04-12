@@ -1,4 +1,5 @@
 package com.practica.loginjwt.Auth;
+import com.practica.loginjwt.User.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +10,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RegisterRequest {
-
     String username;
     String password;
+    String firstName;
+    String lastName;
+    String country;
 }
