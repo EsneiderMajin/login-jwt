@@ -24,12 +24,15 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue
     Integer id;
+    @Basic
     @Column(nullable = false)
     String username;
+
     String firstName;
     String lastName;
     String country;
     String password;
+    @Enumerated(EnumType.STRING)
     Role role;
 
     @Override
